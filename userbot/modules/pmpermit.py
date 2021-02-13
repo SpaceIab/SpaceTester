@@ -50,7 +50,14 @@ async def permitpm(event):
                 last_name = str(reply_user.last_name)
             else:
                 last_name = ''
-
+ ))
+    else:
+        if pm.chat_id in BRAIN_CHECKER:
+            await pm.edit(
+                "`Oups, Yazan SpaceAI yoneticisidir deye PmPermit controller oto devre disi `"
+            )
+            return
+          
             username = '@' + reply_user.username if reply_user.username else f'[{first_name} {last_name}](tg://user?id={id})'
             mention = f'[{first_name} {last_name}](tg://user?id={id})'
 
