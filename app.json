@@ -10,7 +10,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/whomiri/SpaceUserBot",
+  "repository": "https://github.com/whomiri/SpaceTester",
   "website":   "https://t.me/TheMiri",
   "success_url": "https://t.me/SpaceAiD",
   "stack": "container",
@@ -54,7 +54,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Fork sağlamanız durumunda repo URL'nizi buraya ekleyin. Varsayılan olarak kendi repo adresimiz eklidir.",
-      "value": "https://github.com/whomiri/SpaceUserBot",
+      "value": "https://github.com/whomiri/SpaceTester",
       "required": true
     },
     "COUNTRY": {
@@ -90,6 +90,10 @@
       "description": "# DOKUNMA #",
       "value": "False"
     },
+    "PLAYLOG": {
+      "description": "# DOKUNMA #",
+      "value": "False"
+    },
     "BOT_USERNAME": {
       "description": "Inline bot özelliğinin çalışması için gereklidir. Buraya botunuzun kullanıcı adınız yazmanız lazım (Örnek: @TheMiriBot). Botunuz yok ise @BotFather yardımı ile bot oluşturabilirsiniz.",
       "required": false  
@@ -107,6 +111,10 @@
       "required": false      
     },
     "BOTLOG_CHATID": {
+      "description": "Günlük grubunun ChatID'si. BOTLOG= False ve / veya LOGSPAMMER= False ise '0' olarak ayarlayın.",
+      "value": "0"
+    },
+    "PLAYLOG_CHATID": {
       "description": "Günlük grubunun ChatID'si. BOTLOG= False ve / veya LOGSPAMMER= False ise '0' olarak ayarlayın.",
       "value": "0"
     },
