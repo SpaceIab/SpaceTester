@@ -76,9 +76,12 @@ STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
 # Kanal / Grup ID yapılandırmasını günlüğe kaydetme.
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", None))
+PLAYLOG_CHATID = int(os.environ.get("PLAYLOG_CHATID", None))
+
 
 # UserBot günlükleme özelliği.
 BOTLOG = sb(os.environ.get("BOTLOG", "False"))
+PLAYLOG = sb(os.environ.get("PLAYLOG", "False"))
 LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
 
 # Hey! Bu bir bot. Endişelenme ;)
@@ -92,7 +95,7 @@ HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", None)
 # Güncelleyici için özel (fork) repo linki.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/whomiri/SpaceUserBot.git")
+    "https://github.com/whomiri/SpaceTester.git")
 
 # Ayrıntılı konsol günlügü
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
